@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #get superuser permissions
 su
 
