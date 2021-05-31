@@ -1,4 +1,3 @@
-#!/bin/bash
 
 #update
 apt update && apt upgrade
