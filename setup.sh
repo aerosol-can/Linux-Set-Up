@@ -1,5 +1,4 @@
-#get superuser permissions
-su
+#!/bin/bash
 
 #update
 apt update && apt upgrade
