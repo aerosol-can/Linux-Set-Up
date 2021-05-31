@@ -4,6 +4,8 @@ apt update && apt upgrade
 
 #install ZSH
 apt install zsh 
+
+#install Git
 apt install git
 
 #install Oh-My-Zsh
