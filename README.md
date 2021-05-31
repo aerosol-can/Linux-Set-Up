@@ -5,5 +5,5 @@
 
 #### Just Copy This:
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/aerosol-can/Linux-Set-Up/main/setup.sh)" 
+sh "$(curl -fsSL https://raw.githubusercontent.com/aerosol-can/Linux-Set-Up/main/setup.sh)" 
 ```
