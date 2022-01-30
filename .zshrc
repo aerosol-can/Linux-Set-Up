@@ -107,25 +107,30 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#apt aliases
-alias aptupgrade="sudo apt update && sudo apt upgrade"
-alias aptremove="sudo apt remove"
-alias aptautoremove="sudo apt autoremove"
-alias aptinstall="sudo apt install"
+# apt aliases
+alias :upgrade="sudo apt update && sudo apt upgrade"
+alias :remove="sudo apt remove"
+alias :search="sudo apt search"
+alias :autoremove="sudo apt autoremove"
+alias :install="sudo apt install"
 
-#misc
+# misc
 alias reload="source ~/.zshrc" #reload the session
 alias die="exit" #end the session
 alias lt="ls --human-readable --size -1 -S --classify" #list sorted by size
 alias back="cd $OLDPWD" #go to previous directory
+alias ls="lsd"
+alias tree="lsd --tree"
+alias yolo="git commit -m \"$(curl -s http://whatthecommit.com/index.txt)\""
+alias thmconnect="sudo openvpn ~/.config/Cthulhu.ovpn"
 
-#networking aliases
+# networking aliases
 alias myip="echo $(wget -qO - https://api.ipify.org)" #check your ip
 alias localip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'" #check ip in local-network
 alias listenports="sudo netstat -tulanp | grep LISTEN" #list open listening ports
 alias allports="sudo netstat -tulanp" #list all ports
 
-#system resource aliases
+# system resource aliases
 alias meminfo="free -m -l -t" #display memory info
 alias df="df -h" #disk usage - human readable
 alias totaldf="df -h /" #total disk usage - human readable
